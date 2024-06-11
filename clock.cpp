@@ -25,7 +25,7 @@ void loop() {
    digitalWrite(2, 4, 7, 9, 12, HIGH); //1
   delay(1000);       
                  
-  digitalWrite(2, 4, 7, 9, 12 LOW);    
+  digitalWrite(2, 4, 7, 9, 12, LOW);    
   delay(1000);     
 
    digitalWrite(0, 1, 2, 4, 7, 6, 5, 8, 10, 11, 12, HIGH); //2
@@ -43,25 +43,25 @@ void loop() {
    digitalWrite(0, 2, 3, 4, 5, 6, 7, 9, 12, HIGH); //4
   delay(1000);       
                  
-  digitalWrite(0, 2, 3, 4, 5, 6, 7, 9, 12 LOW);    
+  digitalWrite(0, 2, 3, 4, 5, 6, 7, 9, 12, LOW);    
   delay(1000);     
 
    digitalWrite(0, 1, 2, 3, 5, 6, 7, 9, 10, 11, 12, HIGH); //5
   delay(1000);       
                  
-  digitalWrite(0, 1, 2, 3, 5, 6, 7, 9, 10, 11, 12 LOW);    
+  digitalWrite(0, 1, 2, 3, 5, 6, 7, 9, 10, 11, 12, LOW);    
   delay(1000);     
 
    digitalWrite(0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, HIGH); //6  
   delay(1000);       
                  
-  digitalWrite(0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12,, LOW);    
+  digitalWrite(0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, LOW);    
   delay(1000);     
 
    digitalWrite(0, 1, 2, 4, 7, 9, 12, HIGH); //7  
   delay(1000);       
                  
-  digitalWrite(0, 1, 2, 4, 7, 9, 12 LOW);    
+  digitalWrite(0, 1, 2, 4, 7, 9, 12, LOW);    
   delay(1000);     
 
    digitalWrite(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, HIGH); //8   
@@ -70,7 +70,7 @@ void loop() {
   digitalWrite(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, LOW);    
   delay(1000);     
 
-   digitalWrite(0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12,, HIGH); //9
+   digitalWrite(0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, HIGH); //9
   delay(1000);       
                  
   digitalWrite(0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, LOW);    
