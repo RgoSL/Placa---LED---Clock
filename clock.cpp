@@ -77,3 +77,37 @@ void loop() {
   delay(1000);     
                 
 }
+
+/* 
+// Definição dos pinos dos LEDs
+const int leds[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+
+// Padrões de cada dígito (0 a 9)
+const int digitPatterns[][13] = {
+  {1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1}, // 0
+  {0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1}, // 1
+  // padrões para os outros dígitos...
+};
+
+void setup() {
+  // Configuração dos pinos como saída
+  for (int i = 0; i < 13; i++) {
+    pinMode(leds[i], OUTPUT);
+  }
+}
+
+void loop() {
+  // Exibição sequencial dos dígitos
+  for (int i = 0; i < 10; i++) {
+    displayDigit(i);
+    delay(1000);
+  }
+}
+
+void displayDigit(int digit) {
+  // Exibe o padrão do dígito nos LEDs
+  for (int i = 0; i < 13; i++) {
+    digitalWrite(leds[i], digitPatterns[digit][i]);
+  }
+}
+ */
