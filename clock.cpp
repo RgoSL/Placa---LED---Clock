@@ -1,4 +1,4 @@
-void setup() {
+/* void setup() {
   pinMode(0, OUTPUT); 
   pinMode(1, OUTPUT); 
   pinMode(2, OUTPUT); 
@@ -76,9 +76,9 @@ void loop() {
   digitalWrite(0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, LOW);    
   delay(1000);     
                 
-}
+} /*
 
-/* 
+ 
 // Definição dos pinos dos LEDs
 const int leds[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 
@@ -110,4 +110,4 @@ void displayDigit(int digit) {
     digitalWrite(leds[i], digitPatterns[digit][i]);
   }
 }
- */
+ 
