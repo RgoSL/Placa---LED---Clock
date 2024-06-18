@@ -79,25 +79,33 @@ void loop() {
 } */
 
  
-// Definição dos pinos dos LEDs
+// Define os LEDs
 const int leds[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 
-// Padrões de cada dígito (0 a 9)
-const int digitPatterns[][13] = {
-  {1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1}, // 0
-  {0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1}, // 1
-  // padrões para os outros dígitos...
+// Padrão de cada número
+const int mapLed[][13] = {
+  {1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1},     // 0
+  {0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1},     // 1
+  {0, 1, 2, 4, 7, 6, 5, 8, 10, 11, 12},        // 2
+  {0, 1, 2, 4, 7, 6, 5, 9, 10, 11, 12},        // 3
+  {0, 2, 3, 4, 5, 6, 7, 9, 12},                // 4
+  {0, 1, 2, 3, 5, 6, 7, 9, 10, 11, 12},        // 5
+  { 0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12},    // 6
+  {0, 1, 2, 4, 7, 9, 12},                      // 7
+  {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12},  // 8
+  {0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12}      // 9
+
 };
 
 void setup() {
-  // Configuração dos pinos como saída
+  // Passando para os LEDs o comando
   for (int i = 0; i < 13; i++) {
     pinMode(leds[i], OUTPUT);
   }
 }
 
 void loop() {
-  // Exibição sequencial dos dígitos
+  // Exibição em formato de relógio
   for (int i = 0; i < 10; i++) {
     displayDigit(i);
     delay(1000);
@@ -107,7 +115,7 @@ void loop() {
 void displayDigit(int digit) {
   // Exibe o padrão do dígito nos LEDs
   for (int i = 0; i < 13; i++) {
-    digitalWrite(leds[i], digitPatterns[digit][i]);
+    digitalWrite(leds[i], mapLed[digit][i]);
   }
 }
  
